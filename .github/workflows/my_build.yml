@@ -33,7 +33,7 @@ jobs:
         pytest
     - shell: bash
       env:
-        SUPER_SECRET: ${{ secrets.SuperSecret }}
+        SUPER_SECRET: ${{ secrets.PASSWORD }}
       run: |
-        example-command "$SUPER_SECRET"
+        example-command "$PASSWORD"
 
